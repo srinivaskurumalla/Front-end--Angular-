@@ -1,0 +1,52 @@
+<mat-card>
+    <mat-card-title>Add New Job</mat-card-title>
+    <mat-card-content>
+        <form action="" [formGroup]="addUserForm" (ngSubmit)="createUser()">
+            <p>
+                <mat-form-field appearance="outline">
+                <mat-label>Job Name</mat-label>
+                <input matInput placeholder="name" formControlName="name">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="addUserForm.controls['name'].touched && addUserForm.controls['name'].hasError('required')">
+                    name is required
+                </mat-error>
+                <mat-error *ngIf="addUserForm.controls['name'].touched && addUserForm.controls['name'].hasError('minlength')">
+                    name must have more than 3 characters
+                </mat-error>
+            </p>
+
+            <p>
+                <mat-form-field appearance="outline">
+                <mat-label>Email Address</mat-label>
+                <input matInput placeholder="email" formControlName="email">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="addUserForm.controls['email'].touched && addUserForm.controls['email'].hasError('required')">
+                    email is required
+                </mat-error>
+                <mat-error *ngIf="addUserForm.controls['email'].touched && addUserForm.controls['email'].hasError('email')">
+                    Invalid email
+                </mat-error>
+            </p>
+
+            <p>
+                <mat-form-field appearance="outline">
+                <mat-label>Job-title</mat-label>
+                <input matInput placeholder="job" formControlName="job">
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+                </mat-form-field>
+                <mat-error *ngIf="addUserForm.controls['job'].touched && addUserForm.controls['job'].hasError('required')">
+                   Job-title is required
+                </mat-error>
+               
+                
+            </p>
+
+            <p>
+                <button mat-raised-button color="primary" [disabled]="!addUserForm.valid">Submit</button>
+            </p>
+
+        </form>
+</mat-card-content>
+</mat-card>

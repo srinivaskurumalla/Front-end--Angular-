@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "name": "Jim Jimmy",
+      "email": "jim@yahoo.com",
+      "phone": "9963803711",
+      "id": 3
+    },
+    {
+      "name": "srinivas",
+      "email": "sri@gmail.com",
+      "id": 4,
+      "phone": "9963803711"
+    },
+    {
+      "name": "prasad",
+      "email": "prasad@gmail.com",
+      "phone": "0063803725",
+      "id": 7
+    },
+    {
+      "name": "ABC",
+      "email": "ABV@gmail.com",
+      "phone": "9876543210",
+      "id": 9
+    },
+    {
+      "name": "abc",
+      "email": "abc@gmail.com",
+      "phone": "2344525150",
+      "id": 11
+    },
+    {
+      "name": "acdc",
+      "email": "abc@gmail.com",
+      "phone": "2344525152",
+      "id": 12
+    },
+    {
+      "name": "srinivas",
+      "email": "ABV@gmail.com",
+      "phone": "9963803711",
+      "id": 13
+    },
+    {
+      "name": "srinivas",
+      "email": "sri@gmail.com",
+      "phone": "0789332403",
+      "id": 14
+    }
+  ]
+}
